@@ -1,0 +1,56 @@
+# veja https://help.github.com/articles/ignoring-files/ para mais informações sobre arquivos de ignorações
+
+# dependências
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# testes
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# produção
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# arquivos lock (do yarn1 ou npm)
+yarn.lock
+package-lock.json
+
+# arquivos env locais
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# arquivos de configuração do sentry
+.env.sentry-build-plugin
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+
+*storybook.log
+storybook-static
+*.ignore.*
+*.ign.*
+!.npmrc
+.cursorrules
