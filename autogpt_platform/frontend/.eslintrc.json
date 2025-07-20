@@ -1,0 +1,34 @@
+{
+    "extends": [
+        "next/core-web-vitals",
+        "next/typescript",
+        "plugin:storybook/recommended",
+        "plugin:@tanstack/query/recommended"
+    ],
+
+    "rules": {
+        // desabilitando exhaustive-deps para evitar forçar dependências
+        // desnecessárias e proliferação de usecallback
+        //
+        // confiamos na revisão de código para um gerenciamento adequado
+        // de dependências em vez de seguir regras mecânicas
+        //
+        // https://kentcdodds.com/blog/usememo-and-usecallback
+        "react-hooks/exhaustive-deps": "off",
+
+        // desabilita temporariamente, pois temos alguns `any` na base
+        // de código e precisamos analisar caso a caso e ver se eles
+        // podem ser corrigidos
+        "@typescript-eslint/no-explicit-any": "off",
+
+        // permite variáveis não utilizadas que começam com sublinhado
+        // (convenção para não utilizadas intencionalmente)
+        "@typescript-eslint/no-unused-vars": [
+            "error", {
+                "argsIgnorePattern": "^_",
+                "varsIgnorePattern": "^_",
+                "caughtErrorsIgnorePattern": "^_"
+            }
+        ]
+    }
+}
