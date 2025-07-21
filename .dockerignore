@@ -1,0 +1,62 @@
+# ignora tudo por padrão, adicione coisas seletivamente ao contexto
+*
+
+# plataforma - bibliotecas
+!autogpt_platform/autogpt_libs/autogpt_libs/
+!autogpt_platform/autogpt_libs/pyproject.toml
+!autogpt_platform/autogpt_libs/poetry.lock
+!autogpt_platform/autogpt_libs/README.md
+
+# plataforma - backend
+!autogpt_platform/backend/backend/
+!autogpt_platform/backend/migrations/
+!autogpt_platform/backend/schema.prisma
+!autogpt_platform/backend/pyproject.toml
+!autogpt_platform/backend/poetry.lock
+!autogpt_platform/backend/README.md
+
+# plataforma - mercado
+!autogpt_platform/market/market/
+!autogpt_platform/market/scripts.py
+!autogpt_platform/market/schema.prisma
+!autogpt_platform/market/pyproject.toml
+!autogpt_platform/market/poetry.lock
+!autogpt_platform/market/README.md
+
+# plataforma - frontend
+!autogpt_platform/frontend/src/
+!autogpt_platform/frontend/public/
+!autogpt_platform/frontend/package.json
+!autogpt_platform/frontend/pnpm-lock.yaml
+!autogpt_platform/frontend/tsconfig.json
+!autogpt_platform/frontend/README.md
+
+# configuração
+!autogpt_platform/frontend/*.config.*
+!autogpt_platform/frontend/.env.*
+
+# clássico - autogpt
+!classic/original_autogpt/autogpt/
+!classic/original_autogpt/pyproject.toml
+!classic/original_autogpt/poetry.lock
+!classic/original_autogpt/README.md
+!classic/original_autogpt/tests/
+
+# clássico - benchmark
+!classic/benchmark/agbenchmark/
+!classic/benchmark/pyproject.toml
+!classic/benchmark/poetry.lock
+!classic/benchmark/README.md
+
+# clássico - forja
+!classic/forge/
+!classic/forge/pyproject.toml
+!classic/forge/poetry.lock
+!classic/forge/README.md
+
+# clássico - frontend
+!classic/frontend/build/web/
+
+# ignora explicitamente algumas pastas
+.*
+**/__pycache__
