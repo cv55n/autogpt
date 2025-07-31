@@ -1,0 +1,6 @@
+site_name: documentação do autogpt
+site_url: https://docs.agpt.co/
+repo_url: https://github.com/cv55n/autogpt
+repo_name: autogpt
+edit_uri: edit/master/docs/content
+docs_dir: content
